@@ -8,7 +8,7 @@ client.on('ready', () => {
 
   console.log(`Logged in as ${client.user.tag}!`);
 
-client.user.setGame(`Great.`,"http://twitch.tv/S-F")
+client.user.setGame(`hahahahaahahahahahahahahahahahahahahahahah.`,"http://twitch.tv/S-F")
 
   console.log('')
 
@@ -67,9 +67,7 @@ client.user.setGame(`Great.`,"http://twitch.tv/S-F")
 
   
 
-  const Discord = require("discord.js");
 
-const client = new Discord.Client();
 
 client.on('message', message => {
 

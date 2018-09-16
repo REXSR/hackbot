@@ -1498,8 +1498,6 @@ client.on('message' , message => {
     }
 });
 
-const Discord = require('discord.js');
-	const client = new Discord.Client()
 	const fs = require('fs');
 	const moment = require('moment');
 let profile = JSON.parse(fs.readFileSync("./profile.json", "utf8"))

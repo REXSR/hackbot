@@ -1608,3 +1608,4 @@ mentionned.send(` :credit_card: | Transfer Receipt \`\`\`You have received ${arg
 
 
 
+client.login(process.env.BOT_TOKEN);

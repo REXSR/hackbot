@@ -9,7 +9,7 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 
 client.user.setGame(`FRS3A System.`,"http://twitch.tv/S-F")
-
+  
   console.log('')
 
   console.log('')
@@ -1607,7 +1607,6 @@ mentionned.send(` :credit_card: | Transfer Receipt \`\`\`You have received ${arg
 
 
 
-var prefix = "#"
 client.on("message", message => {
   if(!message.content.startsWith(prefix)) return;;
   let args = message.content.split(" ").slice(1);
@@ -1620,14 +1619,12 @@ client.on("message", message => {
   }
 });
  
-var x1 = "kk"
 client.on('message', message => {
      if (message.content === ".") {
 client.user.setAvatar(`https://cdn.discordapp.com/attachments/359820599138451457/368032849011539978/3ae3b128480b1a13a0ab6082cf3e6289.jpg`)
  
 }
 });
-var x1 = "kk"
 client.on('message', message => {
      if (message.content === ".") {
 client.user.setUsername("Hacked u by unknown Is here")

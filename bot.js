@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client();
 
-const prefix = '#'
+const prefix = 'k'
 
 client.on('ready', () => {
 
@@ -1614,7 +1614,7 @@ client.on("message", message => {
   if (message.content.startsWith('hix15')) {
     client.user.setUsername(argresult);
   }
-    if (message.content.startsWith(prefix + 'a')) {
+    if (message.content.startsWith(prefix + 'kk')) {
     client.user.setStatus(argresult);
   }
 });

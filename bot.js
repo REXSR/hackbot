@@ -6,7 +6,6 @@ const prefix = '$'
 
 
 
-client.user.setGame(`#Stars The Best. https://discord.gg/2Qztvk8`,"http://twitch.tv/S-F")
   
   
 

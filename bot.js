@@ -5,7 +5,6 @@ const client = new Discord.Client();
 const prefix = '$'
 
 
-  console.log(`Logged in as ${client.user.tag}!`);
 
 client.user.setGame(`#Stars The Best. https://discord.gg/2Qztvk8`,"http://twitch.tv/S-F")
   

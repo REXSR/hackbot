@@ -4,53 +4,36 @@ const client = new Discord.Client();
 
 const prefix = '$'
 
-client.on('ready', () => {
 
   console.log(`Logged in as ${client.user.tag}!`);
 
 client.user.setGame(`#Stars The Best. https://discord.gg/2Qztvk8`,"http://twitch.tv/S-F")
   
-  console.log('')
+  
 
-  console.log('')
 
-  console.log('╔[═════════════════════════════════════════════════════════════════]╗')
 
-  console.log(`[Start] ${new Date()}`);
+client.on('message', message => {
 
-  console.log('╚[═════════════════════════════════════════════════════════════════]╝')
+  if (message.author.bot) return;
 
-  console.log('')
+  if (!message.content.startsWith(prefix)) return;
 
-  console.log('╔[════════════════════════════════════]╗');
+  let command = message.content.split(" ")[0];
 
-  console.log(`Logged in as * [ " ${client.user.username} " ]`);
+  command = command.slice(prefix.length);
 
-  console.log('')
+  let args = message.content.split(" ").slice(1);
 
-  console.log('Informations :')
+if (command == "!say") {
 
-  console.log('')
+if(!message.guild.member(message.author).hasPermission("MANAGE_MESSAGES")) return message.reply("*لا تملك الصلاحيات المطلوبه**");
 
-  console.log(`servers! [ " ${client.guilds.size} " ]`);
+message.channel.send(args.join("  "))
 
-  console.log(`Users! [ " ${client.users.size} " ]`);
+    message.delete();
 
-  console.log(`channels! [ " ${client.channels.size} " ]`);
-
-  console.log('╚[════════════════════════════════════]╝')
-
-  console.log('')
-
-  console.log('╔[════════════]╗')
-
-  console.log(' Bot Is Online')
-
-  console.log('╚[════════════]╝')
-
-  console.log('')
-
-  console.log('')
+  }
 
 });
 
@@ -58,11 +41,9 @@ client.user.setGame(`#Stars The Best. https://discord.gg/2Qztvk8`,"http://twitch
 
 
 
-
-
  
 
-A7MD.on("guildMemberAdd", member => {
+client.on("guildMemberAdd", member => {
 
   member.createDM().then(function (channel) {
 
@@ -70,10 +51,8 @@ A7MD.on("guildMemberAdd", member => {
 
 **
 
-سلام عليكم 
-
 تعال في حضني تكفى 💛💛💛💛👠
-                               [ https://discord.gg/2Qztvk8 ] 
+                              https://discord.gg/2Qztvk8
 
 الدعووة خاصة لك ... [ ${member}  ]
 
